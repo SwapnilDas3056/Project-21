@@ -50,7 +50,10 @@ function draw() {
     if(box.x - surface1.x <= box.width/2 + surface1.width/2
         && surface1.x - box.x <= box.width/2 + surface1.width/2
         && box.y - surface1.y <= box.height/2 + surface1.height/2
-        && surface1.y - box.y <= box.height/2 + surface1.height/2)
+        && surface1.y - box.y <= box.height/2 + surface1.height/2){
+            box.velocityY = 0;
+            box.velocityX = 0;
+        }
 
     drawSprites();
 }
