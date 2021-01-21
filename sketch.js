@@ -64,5 +64,6 @@ function bounceOff(object1,object2){
     && object2.y - object1.y <= object2.height/2 + object1.height/2){
         object1.velocityY = -(object1.velocityY);
         object1.shapeColor = object2.shapeColor;
+        music.play();
         }
 }
