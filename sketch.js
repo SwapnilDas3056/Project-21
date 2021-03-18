@@ -35,10 +35,10 @@ function setup(){
 function draw() {
     background(rgb(169,169,169));
 
-    if(box.isTouching(edges[1])||box.isTouching(edges[3])){
+    if(box.isTouching(edges[0])||box.isTouching(edges[1])){
         box.velocityX = -(box.velocityX);
     }
-    if(box.isTouching(edges[0])||box.isTouching(edges[2])){
+    if(box.isTouching(edges[2])||box.isTouching(edges[3])){
         box.velocityY = -(box.velocityY);
     }
 
